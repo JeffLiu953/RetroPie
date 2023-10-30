@@ -13,9 +13,9 @@ void setup(){
   pinMode(btn->getB(), INPUT_PULLUP);
   pinMode(btn->getX(), INPUT_PULLUP);
   pinMode(btn->getY(), INPUT_PULLUP);
-  pinMode(btn->getR(), INPUT_PULLUP);
-  pinMode(btn->getL(), INPUT_PULLUP);
-  pinMode(btn->getReset(), INPUT_PULLUP);
+  pinMode(btn->getHotkey(), INPUT_PULLUP);
+  pinMode(btn->getStart(), INPUT_PULLUP);
+  pinMode(btn->getSelect(), INPUT_PULLUP);
   Serial.begin(9600);
   Keyboard.begin();
 }
@@ -44,13 +44,13 @@ void loop(){
   if(digitalRead(btn->getY()) == LOW){
     btn->yPressed();
   }
-  if(digitalRead(btn->getR()) == LOW){
-    btn->rPressed();
+  if(digitalRead(btn->getStart()) == LOW){
+    btn->startPressed();
   }
-  if(digitalRead(btn->getL()) == LOW){
-    btn->lPressed();
+  if(digitalRead(btn->getHotkey()) == LOW){
+    btn->hotkeyPressed();
   }
-  if(digitalRead(btn->getReset()) == LOW){
-    btn->resetPressed();
+  if(digitalRead(btn->getSelect()) == LOW){
+    btn->selectPressed();
   }
 }
