@@ -85,7 +85,7 @@ int Button::getSelect(){ return select; }
 //button behaviour
 void Button::upPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('w');
         lastDebounceTime = millis();
@@ -93,7 +93,7 @@ void Button::upPressed(){
 }
 void Button::downPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('s');
         lastDebounceTime = millis();
@@ -101,7 +101,7 @@ void Button::downPressed(){
 }
 void Button::leftPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('a');
         lastDebounceTime = millis();
@@ -109,7 +109,7 @@ void Button::leftPressed(){
 }
 void Button::rightPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('d');
         lastDebounceTime = millis();
@@ -117,7 +117,7 @@ void Button::rightPressed(){
 }
 void Button::aPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('n');
         lastDebounceTime = millis();
@@ -125,7 +125,7 @@ void Button::aPressed(){
 }
 void Button::bPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('l');
         lastDebounceTime = millis();
@@ -133,7 +133,7 @@ void Button::bPressed(){
 }
 void Button::xPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('x');
         lastDebounceTime = millis();
@@ -141,7 +141,7 @@ void Button::xPressed(){
 }
 void Button::yPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('y');
         lastDebounceTime = millis();
@@ -149,7 +149,7 @@ void Button::yPressed(){
 }
 void Button::hotkeyPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write(' ');
         lastDebounceTime = millis();
@@ -157,7 +157,7 @@ void Button::hotkeyPressed(){
 }
 void Button::startPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('k');
         lastDebounceTime = millis();
@@ -165,7 +165,7 @@ void Button::startPressed(){
 }
 void Button::selectPressed(){
     static unsigned long lastDebounceTime = 0;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 200;
     if (millis() - lastDebounceTime > debounceDelay) {
         Keyboard.write('p');
         lastDebounceTime = millis();
